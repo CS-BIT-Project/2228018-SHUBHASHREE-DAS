@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>smartprep</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="body">
+
+
+
+    <ul>
+        <li><a href="feedback.php">Give Feedback</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li style="float: left; font-weight: bold; color: white; font-size: 20px; padding: 14px 16px;">SMARTPrep</li>
+    </ul>
+
+
+
+    <div id="top" class="header">
+
+        <div class="text-vertical-center">
+            <div class="mySlides">
+                <h1>Hello!</h1>
+                <h3>Get prepared to your online exams by just one click.</h3>
+                <br>
+                
+            </div>
+        </div>
+        <div class="text-vertical-center">
+            <div class="mySlides">
+                <h1>Faster, Better and Quicker</h1>
+                <h3>No more loading and no more waiting.</h3>
+                <br>
+                
+            </div>
+        </div>
+        <div class="text-vertical-center">
+            <div class="mySlides">
+                <h1>Hurray!</h1>
+                <h3>No more login, logout, negative marking, and time limit.</h3>
+                <br>
+                
+            </div>
+        </div>
+        <div class="text-vertical-center">
+            <div class="mySlides">
+                <h1>Simple and Best!</h1>
+                <h3>We offer the best questions of all time.</h3>
+                <br>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <br>
+
+
+    <div id="section3">
+        <div class="row">
+            <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                <div>
+                    <img src="../images/Biology.jpg" alt="bio" />
+                    <div class="caption">
+                        <h3>BIOLOGY</h3>
+                        <br>
+                        <p><a href="mock_test.php?subject=Biology" class="btn btn-success" role="button">Take a test</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                <div>
+                    <img src="../images/physics.png" alt="phyics" />
+                    <div class="caption">
+                        <h3>PHYSICS</h3>
+                        <br>
+                        <p><a href="mock_test.php?subject=Physics" class="btn btn-success" role="button">Take
+                                a test</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                <div>
+                    <img src="../images/chemistry.png" alt="chemistry" />
+                    <div class="caption">
+                        <h3>CHEMISTRY</h3>
+                        <br>
+                        <p><a href="mock_test.php?subject=Chemistry" class="btn btn-success"
+                                role="button">Take a test</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                <p class="footer-heading">📚 Learn. Practice. Succeed.</p>
+                <p class="footer-subtext">Access previous year papers & mock tests anytime.</p>
+            </div>
+
+
+
+            <div class="footer-copyright">
+                <p>© 2025 SMARTPrep. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        footer {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .footer-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .footer-subtext {
+            font-size: 1rem;
+            margin: 5px 0 15px;
+            opacity: 0.8;
+        }
+
+        .footer-icons {
+            margin: 10px 0;
+        }
+
+        .footer-icons .icon {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-icons .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .github {
+            color: #fff;
+        }
+
+        .facebook {
+            color: #1877f2;
+        }
+
+        .twitter {
+            color: #1da1f2;
+        }
+
+        .instagram {
+            color: #e4405f;
+        }
+
+        .footer-copyright {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+
+</body>
+
+</html>
